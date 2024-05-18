@@ -74,68 +74,84 @@ const HomePage = () => {
             justifyContent: "right"
           }}>
             <Box sx={{
-              width: 30,
-              "&:hover": {
-                cursor: "pointer"
-                // width: "105px",
-                // "& .text": {
-                //   // width: "80px",
-                //   // display: "flex"
-                // }
-              },
-              // transition: "width .5s ease",
-              // display: "flex"
-            }}>
-              <img src="https://user-images.githubusercontent.com/74038190/235294010-ec412ef5-e3da-4efa-b1d4-0ab4d4638755.gif"
-                style={{
-                  maxWidth: "100%"
-                }}
-                data-target="animated-image.originalImage"></img>
-            </Box>
-            <Box sx={{
-              width: 30, "&:hover": {
+              ml: 1, height: 25, width: 25, "&:hover": {
                 cursor: "pointer"
               }
             }}>
-              <img src="https://user-images.githubusercontent.com/74038190/235294011-b8074c31-9097-4a65-a594-4151b58743a8.gif"
+              <img src="/image/ig.gif"
                 style={{
                   maxWidth: "100%"
                 }}
-                data-target="animated-image.originalImage" />
+                data-target="animated-image.originalImage"
+                width={25}
+                height={25}
+                alt="images"
+                loading="lazy" />
             </Box>
             <Box sx={{
-              width: 30, "&:hover": {
+              ml: 1, height: 25, width: 25, "&:hover": {
                 cursor: "pointer"
               }
             }}>
-              <img src="https://user-images.githubusercontent.com/74038190/235294012-0a55e343-37ad-4b0f-924f-c8431d9d2483.gif"
+              <img src="/image/fb.gif"
                 style={{
                   maxWidth: "100%"
                 }}
-                data-target="animated-image.originalImage" />
+                data-target="animated-image.originalImage"
+                width={25}
+                height={25}
+                alt="images"
+                loading="lazy" />
             </Box>
             <Box sx={{
-              width: 30, "&:hover": {
+              ml: 1, height: 25, width: 25, "&:hover": {
                 cursor: "pointer"
               }
             }}>
-              <img src="https://user-images.githubusercontent.com/74038190/235294013-a33e5c43-a01c-43f6-b44d-a406d8b4ab75.gif"
+              <img src="/image/x.gif"
                 style={{
                   maxWidth: "100%"
                 }}
-                data-target="animated-image.originalImage" />
+                data-target="animated-image.originalImage"
+                width={25}
+                height={25}
+                alt="images"
+                loading="lazy" />
             </Box>
+            <Box sx={{
+              ml: 1, height: 25, width: 25, "&:hover": {
+                cursor: "pointer"
+              }
+            }}>
+              <img src="/image/in.gif"
+                style={{
+                  maxWidth: "100%"
+                }}
+                data-target="animated-image.originalImage"
+                width={25}
+                height={25}
+                alt="images"
+                loading="lazy" />
+            </Box>
+
           </Grid>
         </Grid>
         <Grid container item {... { xs: 12 }} sx={{ mb: 5 }}>
           <Grid item {... { xs: 12 }} sx={{ display: "flex", justifyContent: { xs: "center", sm: "end" } }}>
-            <Box sx={{ width: 150 }}>
-              <img loading="lazy"
-                src="/image/programer.gif"
+
+            <Box sx={{ width: 150, height: 150 }}>
+              <video loading="lazy"
+                // src="/image/programer.webm"
+                muted
+                loop="true" autoplay="autoplay"
                 style={{ maxWidth: "100%" }}
                 data-target="animated-image.originalImage"
-                alt="icon">
-              </img>
+                alt="icon"
+                width={150}
+                height={150}
+              >
+                <source src="/image/programer.webm" type="video/webm"></source>
+              </video>
             </Box>
           </Grid>
           <Grid item {... { xs: 12 }} sx={{

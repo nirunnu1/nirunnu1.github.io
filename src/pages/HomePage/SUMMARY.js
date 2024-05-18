@@ -23,11 +23,13 @@ const SUMMARY = ({ inView }) => {
             }} >
                 <Slide direction="right" in={inView.includes(id)} mountOnEnter
                     timeout={1000} className="Slide">
-                    <Box sx={{ width: 200 }}>
+                    <Box sx={{ width: 200, height: 200 }}>
                         <img loading="lazy" src="/image/code.gif"
                             style={{ maxWidth: "100%" }}
                             data-target="animated-image.originalImage"
-                            alt="icon-code"></img>
+                            alt="icon-code"
+                            width="200"
+                            height={200}></img>
                     </Box>
                 </Slide>
             </Grid>

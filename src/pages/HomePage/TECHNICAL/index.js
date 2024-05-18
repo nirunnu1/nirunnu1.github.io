@@ -21,10 +21,12 @@ const IconUC = ({ uri, inView, num }) => {
         <Zoom in={inView.includes("TECHNICAL-Icon")}
             style={{ transitionDelay: inView.includes("TECHNICAL-Icon") ? `${num * 50}ms` : '0ms' }}>
             <Grid item {... { xs: 1, sm: 1, md: 1.5, lg: 1.5 }}>
-                <img loading="lazy" src={uri}
+                <img loading="lazy"
+                    src={uri}
                     style={{ maxWidth: "100%" }}
                     data-target="animated-image.originalImage"
-                    alt="icon" />
+                    alt="icon"
+                />
             </Grid>
         </Zoom>
     )

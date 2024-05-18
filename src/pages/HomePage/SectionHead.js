@@ -19,7 +19,7 @@ const SectionHead = ({
             <Box sx={{ display: "flex", alignItems: "center" }}>
                 <Slide direction="right" in={inView.includes(id)} mountOnEnter
                     timeout={1000} className="Slide">
-                    <Box sx={{ p: 1 }}>
+                    <Box sx={{ p: 1, width: 25, height: 25 }}>
                         <img loading="lazy" src={icon}
                             style={{ maxWidth: "100%" }}
                             data-target="animated-image.originalImage"
@@ -32,7 +32,7 @@ const SectionHead = ({
                     size={{ xs: 18, sm: 24 }} />
                 <Slide direction="left" in={inView.includes(id)} mountOnEnter
                     timeout={1000} className="Slide">
-                    <Box sx={{ p: 1 }}>
+                    <Box sx={{ p: 1, width: 25, height: 25 }}>
                         <img loading="lazy" src={icon}
                             style={{ maxWidth: "100%" }}
                             data-target="animated-image.originalImage"

@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -5,10 +6,7 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/image/favicon.png" />
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- HTML Meta Tags -->
     <title>Nirun Tulayote</title>
     <meta
@@ -47,7 +45,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=<%= process.env.REACT_APP_FONT%>:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/image/code.gif"
+      type="image/gif"
+    />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/image/ig.gif"
+      type="image/gif"
+    />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/image/fb.gif"
+      type="image/gif"
+    />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/image/x.gif"
+      type="image/gif"
+    />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/image/in.gif"
+      type="image/gif"
+    />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="/image/c.gif"
+      type="image/gif"
     />
   </head>
 
